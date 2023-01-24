@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}About Us | {{ parent() }}{% endblock %}
+
+{% block body %}
+
+   <img src="{{asset('/images/about.png')}}" alt="about me" class="w-64 h-64 my-12 drop-shadow-2xl">
+   <h1 class="mt-3 text-3xl sm:text-5xl font-semibold text-gray-800">Built with <span class="text-pink-500">&hearts;</span> by Me .</h1>
+   <p class="text-gray-800 sm:text-2xl mt-3">
+      <a href=" {{ path("app_home") }}" class="text-indigo-500 hover:text-indigo-600 ">
+        Revenire a la page d'acceuil 
+      </a>
+    </p>
+
+{% endblock %}
